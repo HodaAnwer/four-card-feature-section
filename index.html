@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: poppins;
+      src: url(Poppins-Regular.ttf);
+    }
+    
+    @font-face {
+      font-family: poppinsExtraLight;
+      src: url(Poppins-ExtraLight.ttf);
+    }
+    
+    body {
+      font-family: poppins;
+      background-color: hsl(229, 6%, 66%);
+    }
+    
+    .container {
+      background-color: hsl(0, 0%, 98%);
+      padding-top: 50px;
+    }
+    
+    #h1 {
+      font-weight: 200;
+      font-family: poppinsExtraLight;
+      color: hsl(234, 12%, 34%);
+      /* color: hsl(229, 6%, 66%); */
+      text-align: center;
+    }
+    
+    #h2 {
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+      text-align: center;
+    }
+    
+    .h4 {
+      text-align: center;
+      color: hsl(229, 6%, 66%);
+      font-weight: 400;
+      font-size: 15px;
+    }
+    
+    .h6 {
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+    }
+    
+    p {
+      color: hsl(229, 6%, 66%);
+      font-size: 15px;
+    }
+    
+    .div {
+      background-color: white;
+      overflow: auto;
+      padding: 20px;
+      border-radius: 5px;
+      border-style: solid;
+      box-shadow: 5px 10px 8px hsl(229, 6%, 66%);
+    }
+    
+    @media only screen and (max-width:767px) {
+      #div1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-color: hsl(180, 62%, 55%) white white white;
+      }
+      #div2 {
+        border-color: hsl(0, 78%, 62%) white white white;
+        box-shadow: 5px 10px 8px #888888;
+      }
+      #div3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-color: hsl(34, 97%, 64%) white white white;
+      }
+      #div4 {
+        margin-bottom: 50px;
+        border-color: hsl(212, 86%, 64%) white white white;
+      }
+    }
+    
+    @media only screen and (min-width:768px) {
+      #div1 {
+        border-color: hsl(180, 62%, 55%) white white white;
+      }
+      #div2 {
+        border-color: hsl(0, 78%, 62%) white white white;
+      }
+      #div3 {
+        margin-top: 25px;
+        border-color: hsl(34, 97%, 64%) white white white;
+      }
+      #div4 {
+        border-color: hsl(212, 86%, 64%) white white white;
+      }
+      .outer-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="h1"> Reliable, efficient delivery</h1>
+    <h1 id="h2"> Powered by Technology</h1>
+
+    <h4 class="h4">Our Artificial Intelligence powered tools use millions of project data</h4>
+    <h4 class="h4"> points to ensure that your project is successful</h4>
+
+    <div class="row" style="padding-bottom: 50px; padding-top: 50px;">
+      <div class="col-md-4 outer-div">
+        <div id="div1" class="div">
+          <h6 class="h6">Supervisor </h6>
+          <p>Monitors activity to identify project roadblocks </p>
+          <img src="images/icon-supervisor.svg" class="float-end">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="div2" class="div">
+          <h6 class="h6"> Team Builder</h6>
+          <p> Scans our talent network to create the optimal team for your project</p>
+          <img src="images/icon-team-builder.svg" class="float-end">
+        </div>
+        <div id="div3" class="div">
+          <h6 class="h6"> Karma </h6>
+          <p>Regularly evaluates our talent to ensure quality </p>
+          <img src="images/icon-karma.svg" class="float-end">
+        </div>
+      </div>
+
+      <div class="col-md-4 outer-div">
+        <div id="div4" class="div">
+          <h6 class="h6"> Calculator</h6>
+          <p> Uses data from past projects to provide better delivery estimates</p>
+          <img src="images/icon-calculator.svg" class="float-end">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
